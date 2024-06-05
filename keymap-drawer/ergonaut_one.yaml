@@ -1,6 +1,6 @@
 layers:
   default:
-  - {t: ']', h: Gui}
+  - {t: ']', h: LMETA}
   - Q
   - W
   - E
@@ -11,8 +11,8 @@ layers:
   - I
   - O
   - P
-  - '['
-  - {t: '`', h: Ctrl}
+  - {t: '[', h: RIGHT COMMAND}
+  - {t: '`', h: LEFT ALT}
   - A
   - S
   - D
@@ -24,7 +24,7 @@ layers:
   - L
   - ;
   - {t: '''', h: Ctrl}
-  - {t: '-', h: Alt}
+  - {t: '-', h: Ctrl}
   - Z
   - X
   - C
@@ -35,93 +35,93 @@ layers:
   - ','
   - .
   - /
-  - {t: \, h: Alt}
-  - {t: ↹, h: raise}
-  - {t: ␣, h: Shift}
-  - {t: ⏎, h: lower}
-  - {t: Esc, h: lower}
-  - {t: ⌫, h: Shift}
-  - {t: ⌦, h: raise}
-  lower:
-  - {t: F1, h: Gui}
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: +, h: Ctrl}
+  - Sft+Ctl+ LEFT ALT
+  - {t: ↹, h: nav}
+  - {t: ␣, h: LSHIFT}
+  - {t: ENTER, h: sym}
+  - {t: ESCAPE, h: sym}
+  - {t: BACKSPACE, h: RSHIFT}
+  - {t: ⌦, h: nav}
+  sym:
+  - LEFT COMMAND
   - '!'
   - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '-', h: Ctrl}
-  - {t: '=', h: Alt}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
+  - '['
+  - ']'
+  - '|'
+  - KP DOT
   - '7'
   - '8'
   - '9'
+  - '*'
+  - /
+  - LEFT ALT
+  - '#'
+  - $
+  - (
+  - )
+  - '`'
+  - \
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - {t: '-', h: Ctrl}
+  - Ctrl
+  - '%'
+  - ^
+  - '{'
+  - '}'
+  - '~'
   - '0'
-  - Alt
+  - '1'
+  - '2'
+  - '3'
+  - KP EQUAL
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
-  - {t: KP NUM, h: Gui}
-  - KP SLASH
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP MINUS
-  - Vol Up
-  - Home
-  - Print Scrn
-  - Page Up
-  - SLCK
-  - CLCK
-  - {t: '=', h: Ctrl}
-  - KP MULTIPLY
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP PLUS
-  - MUTE
-  - ←
+  nav:
+  - LMETA
+  - ''
   - ↑
-  - →
-  - Insert
-  - {t: APP, h: Ctrl}
-  - Alt
-  - KP 0
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP DOT
-  - Vol Down
+  - ''
+  - Home
   - End
-  - ↓
-  - Page Down
-  - Pause Break
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - RMETA
   - Alt
+  - ←
+  - ↓
+  - →
+  - Page Up
+  - PAGE DOWN
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - Ctrl
+  - Ctrl
+  - ⏮️
+  - PLAY
+  - ⏭️
+  - Vol Down
+  - Vol Up
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -160,7 +160,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: mac, h: toggle}
   - ''
   - ''
   - ''
@@ -169,5 +169,48 @@ layers:
   - ''
   - {type: held}
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  mac:
+  - {t: ']', h: Ctrl}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctrl
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '-', h: LCMD}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
