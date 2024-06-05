@@ -1,0 +1,173 @@
+layers:
+  default:
+  - {t: ']', h: Gui}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: '[', h: RIGHT COMMAND}
+  - {t: '`', h: LEFT ALT}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: '''', h: Ctrl}
+  - {t: '-', h: Ctrl}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Sft+Ctl+ LEFT ALT
+  - {t: ↹, h: nav}
+  - {t: ␣, h: LEFT SHIFT}
+  - {t: ENTER, h: sym}
+  - {t: ESCAPE, h: sym}
+  - {t: BACKSPACE, h: LEFT GUI}
+  - {t: ⌦, h: nav}
+  sym:
+  - LEFT COMMAND
+  - '!'
+  - '@'
+  - '['
+  - ']'
+  - '|'
+  - KP DOT
+  - '7'
+  - '8'
+  - '9'
+  - '*'
+  - /
+  - LEFT ALT
+  - '#'
+  - $
+  - (
+  - )
+  - '`'
+  - \
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - {t: '-', h: Ctrl}
+  - Ctrl
+  - '%'
+  - ^
+  - '{'
+  - '}'
+  - '~'
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - KP EQUAL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  nav:
+  - LMETA
+  - ''
+  - ↑
+  - ''
+  - Home
+  - End
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - RIGHT GUI
+  - Alt
+  - ←
+  - ↓
+  - →
+  - Page Up
+  - PAGE DOWN
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - Ctrl
+  - Ctrl
+  - ⏮️
+  - PLAY
+  - ⏭️
+  - Vol Down
+  - Vol Up
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  adjust:
+  - Boot
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Boot
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - BT 5
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
+  - BT CLR
+  - Reset
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Reset
+  - {type: held}
+  - ''
+  - {type: held}
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
