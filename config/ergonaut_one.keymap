@@ -3,9 +3,10 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define DEF 0
-#define LWR 1
-#define RSE 2
+#define SYM 1
+#define NAV 2
 #define ADJ 3
+#define MAC 4
 
 &lt { quick-tap-ms = <200>; };
 
@@ -26,12 +27,13 @@
 
         default_layer {
             bindings = <
-&mt LGUI RBKT       &kp Q  &kp W  &kp E      &kp R                 &kp T        &kp Y         &kp U                   &kp I      &kp O    &kp P     &mt RIGHT_COMMAND LEFT_BRACKET
-&mt LEFT_ALT GRAVE  &kp A  &kp S  &kp D      &kp F                 &kp G        &kp H         &kp J                   &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
-&mt LCTRL MINUS     &kp Z  &kp X  &kp C      &kp V                 &kp B        &kp N         &kp M                   &kp COMMA  &kp DOT  &kp FSLH  &kp LS(LC(LEFT_ALT))
-                                  &lt 2 TAB  &mt LEFT_SHIFT SPACE  &lt 1 ENTER  &lt 1 ESCAPE  &mt LEFT_GUI BACKSPACE  &lt 2 DEL
+&mt LMETA RBKT      &kp Q  &kp W  &kp E      &kp R                 &kp T        &kp Y         &kp U                           &kp I      &kp O    &kp P     &mt RIGHT_COMMAND LEFT_BRACKET
+&mt LEFT_ALT GRAVE  &kp A  &kp S  &kp D      &kp F                 &kp G        &kp H         &kp J                           &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+&mt LCTRL MINUS     &kp Z  &kp X  &kp C      &kp V                 &kp B        &kp N         &kp M                           &kp COMMA  &kp DOT  &kp FSLH  &kp LS(LC(LEFT_ALT))
+                                  &lt NAV TAB  &mt LSHIFT SPACE  &lt SYM ENTER  &lt SYM ESCAPE  &mt RSHIFT BACKSPACE  &lt NAV DEL
             >;
         };
+
 
         sym_layer {
             bindings = <
@@ -44,7 +46,7 @@
 
         nav_layer {
             bindings = <
-&kp LMETA  &none       &kp UP      &none       &kp HOME      &kp END        &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp RIGHT_GUI
+&kp LMETA  &none       &kp UP      &none       &kp HOME      &kp END        &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp RMETA
 &kp LALT   &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_UP     &kp PAGE_DOWN  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp RCTRL
 &kp LCTRL  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP   &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans
                                    &trans      &trans        &trans         &trans   &trans   &trans
@@ -55,8 +57,17 @@
             bindings = <
 &bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
+&sys_reset   &none         &none         &none         &none         &none         &none         &tog MAC      &none         &none         &none         &sys_reset
                                          &trans        &none         &trans        &none         &trans        &trans
+            >;
+        };
+
+        mac_layer {
+            bindings = <
+&mt LCTRL RBKT  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp RCTRL
+&trans          &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&mt LCMD MINUS  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                              &trans &trans &trans &trans &trans &trans
             >;
         };
     };
