@@ -27,20 +27,19 @@
 
         default_layer {
             bindings = <
-&mt LMETA RBKT      &kp Q  &kp W  &kp E      &kp R                 &kp T        &kp Y         &kp U                           &kp I      &kp O    &kp P     &mt RIGHT_COMMAND LEFT_BRACKET
-&mt LEFT_ALT GRAVE  &kp A  &kp S  &kp D      &kp F                 &kp G        &kp H         &kp J                           &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
-&mt LCTRL MINUS     &kp Z  &kp X  &kp C      &kp V                 &kp B        &kp N         &kp M                           &kp COMMA  &kp DOT  &kp FSLH  &kp LS(LC(LEFT_ALT))
+&mt LMETA RBKT      &kp Q  &kp W  &kp E        &kp R             &kp T          &kp Y           &kp U                 &kp I        &kp O    &kp P     &mt RIGHT_COMMAND LEFT_BRACKET
+&mt LEFT_ALT GRAVE  &kp A  &kp S  &kp D        &kp F             &kp G          &kp H           &kp J                 &kp K        &kp L    &kp SEMI  &mt RCTRL SQT
+&mt LCTRL MINUS     &kp Z  &kp X  &kp C        &kp V             &kp B          &kp N           &kp M                 &kp COMMA    &kp DOT  &kp FSLH  &kp LS(LC(LEFT_ALT))
                                   &lt NAV TAB  &mt LSHIFT SPACE  &lt SYM ENTER  &lt SYM ESCAPE  &mt RSHIFT BACKSPACE  &lt NAV DEL
             >;
         };
 
-
         sym_layer {
             bindings = <
-&kp LEFT_COMMAND  &kp EXCL     &kp AT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE   &kp KP_DOT     &kp N7        &kp N8  &kp N9  &kp ASTERISK  &kp SLASH
-&kp LEFT_ALT      &kp HASH     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp BACKSLASH  &kp NUMBER_4  &kp N5  &kp N6  &kp PLUS      &mt RCTRL MINUS
-&kp LCTRL         &kp PERCENT  &kp CARET   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE  &kp N0         &kp N1        &kp N2  &kp N3  &kp KP_EQUAL  &trans
-                                           &trans                &trans                 &trans     &trans         &trans        &trans
+&kp LEFT_COMMAND  &kp EXCL     &kp AT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE       &kp KP_DOT     &kp N7        &kp N8  &kp N9  &kp ASTERISK  &kp SLASH
+&kp LEFT_ALT      &kp HASH     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp BACKSLASH  &kp NUMBER_4  &kp N5  &kp N6  &kp PLUS      &mt RCTRL MINUS
+&kp LCTRL         &kp PERCENT  &kp CARET   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE      &kp N0         &kp N1        &kp N2  &kp N3  &kp KP_EQUAL  &trans
+                                           &trans                &trans                 &trans         &trans         &trans        &trans
             >;
         };
 
@@ -64,10 +63,10 @@
 
         mac_layer {
             bindings = <
-&mt LCTRL RBKT  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp RCTRL
-&trans          &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&mt LCMD MINUS  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                              &trans &trans &trans &trans &trans &trans
+&mt LCTRL RBKT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RCTRL
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&mt LCMD MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
