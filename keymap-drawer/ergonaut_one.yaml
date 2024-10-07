@@ -35,7 +35,7 @@ layers:
   - ','
   - .
   - /
-  - Sft+Ctl+ LEFT ALT
+  - {t: Ctl+Sft+Gui+ LEFT ALT, h: sticky}
   - {t: ↹, h: nav}
   - {t: ␣, h: LSHIFT}
   - {t: ENTER, h: sym}

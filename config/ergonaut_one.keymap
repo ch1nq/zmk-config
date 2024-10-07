@@ -29,7 +29,7 @@
             bindings = <
 &mt LMETA RBKT      &kp Q  &kp W  &kp E        &kp R             &kp T          &kp Y           &kp U                 &kp I        &kp O    &kp P     &mt RIGHT_COMMAND LEFT_BRACKET
 &mt LEFT_ALT GRAVE  &kp A  &kp S  &kp D        &kp F             &kp G          &kp H           &kp J                 &kp K        &kp L    &kp SEMI  &mt RCTRL SQT
-&mt LCTRL MINUS     &kp Z  &kp X  &kp C        &kp V             &kp B          &kp N           &kp M                 &kp COMMA    &kp DOT  &kp FSLH  &kp LS(LC(LEFT_ALT))
+&mt LCTRL MINUS     &kp Z  &kp X  &kp C        &kp V             &kp B          &kp N           &kp M                 &kp COMMA    &kp DOT  &kp FSLH  &sk LC(LS(LG(LEFT_ALT)))
                                   &lt NAV TAB  &mt LSHIFT SPACE  &lt SYM ENTER  &lt SYM ESCAPE  &mt RSHIFT BACKSPACE  &lt NAV DEL
             >;
         };
