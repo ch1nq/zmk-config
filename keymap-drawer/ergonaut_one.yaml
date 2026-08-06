@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: ergonaut_one}
 layers:
   default:
   - {t: ']', h: LMETA}
@@ -11,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: '[', h: RIGHT COMMAND}
+  - {t: RIGHT ALT, h: RIGHT ALT}
   - {t: '`', h: LEFT ALT}
   - A
   - S
@@ -35,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - {t: Ctl+Sft+Gui+ LEFT ALT, h: sticky}
+  - {t: Ctl+Sft+Gui+LEFT ALT, h: sticky}
   - {t: ↹, h: nav}
   - {t: ␣, h: LSHIFT}
   - {t: ENTER, h: sym}
