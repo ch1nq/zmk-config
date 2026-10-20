@@ -14,16 +14,16 @@ layers:
   - P
   - {t: RIGHT ALT, h: RIGHT ALT}
   - {t: '`', h: LEFT ALT}
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: Gui}
+  - {t: S, h: Alt}
+  - {t: D, h: Ctrl}
+  - {t: F, h: Shift}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: Shift}
+  - {t: K, h: Ctrl}
+  - {t: L, h: Alt}
+  - {t: ;, h: Gui}
   - {t: '''', h: Ctrl}
   - {t: '-', h: Ctrl}
   - Z
@@ -186,16 +186,16 @@ layers:
   - {t: ▽, type: trans}
   - Ctrl
   - {t: ▽, type: trans}
+  - {t: A, h: Ctrl}
+  - {t: S, h: Alt}
+  - {t: D, h: Gui}
+  - {t: F, h: Shift}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: J, h: Shift}
+  - {t: K, h: Gui}
+  - {t: L, h: Alt}
+  - {t: ;, h: Ctrl}
   - {t: ▽, type: trans}
   - {t: '-', h: LCMD}
   - {t: ▽, type: trans}
