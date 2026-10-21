@@ -43,6 +43,49 @@ layers:
   - {t: ESCAPE, h: sym}
   - {t: BACKSPACE, h: RSHIFT}
   - {t: ⌦, h: nav}
+  mac:
+  - {t: ']', h: Ctrl}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctrl
+  - {t: ▽, type: trans}
+  - {t: A, h: Ctrl}
+  - {t: S, h: Alt}
+  - {t: D, h: Gui}
+  - {t: F, h: Shift}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: J, h: Shift}
+  - {t: K, h: Gui}
+  - {t: L, h: Alt}
+  - {t: ;, h: Ctrl}
+  - {t: ▽, type: trans}
+  - {t: '-', h: LCMD}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   sym:
   - LEFT COMMAND
   - '!'
@@ -106,10 +149,10 @@ layers:
   - Page Up
   - PAGE DOWN
   - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - {t: F7, h: Shift}
+  - {t: F8, h: Ctrl}
+  - {t: F9, h: Alt}
+  - {t: F10, h: Gui}
   - Ctrl
   - Ctrl
   - ⏮️
@@ -122,6 +165,49 @@ layers:
   - F13
   - F14
   - F15
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  mac_nav:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: F7, h: Shift}
+  - {t: F8, h: Gui}
+  - {t: F9, h: Alt}
+  - {t: F10, h: Ctrl}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -170,48 +256,5 @@ layers:
   - ''
   - {type: held}
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  mac:
-  - {t: ']', h: Ctrl}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctrl
-  - {t: ▽, type: trans}
-  - {t: A, h: Ctrl}
-  - {t: S, h: Alt}
-  - {t: D, h: Gui}
-  - {t: F, h: Shift}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: J, h: Shift}
-  - {t: K, h: Gui}
-  - {t: L, h: Alt}
-  - {t: ;, h: Ctrl}
-  - {t: ▽, type: trans}
-  - {t: '-', h: LCMD}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

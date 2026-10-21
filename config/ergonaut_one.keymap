@@ -3,10 +3,11 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define DEF 0
-#define SYM 1
-#define NAV 2
-#define ADJ 3
-#define MAC 4
+#define MAC 1
+#define SYM 2
+#define NAV 3
+#define MAC_NAV 4
+#define ADJ 5
 
 &lt { quick-tap-ms = <200>; };
 
@@ -47,8 +48,13 @@
         compatible = "zmk,conditional-layers";
 
         tri-layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <SYM NAV>;
+            then-layer = <ADJ>;
+        };
+
+        mac-nav-layer {
+            if-layers = <MAC NAV>;
+            then-layer = <MAC_NAV>;
         };
     };
 
@@ -64,6 +70,15 @@
             >;
         };
 
+        mac_layer {
+            bindings = <
+&mt LCTRL RBKT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RCTRL
+&trans          &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &trans  &trans  &hmr RSHFT J  &hmr RGUI K  &hmr RALT L  &hmr RCTRL SEMI  &trans
+&mt LCMD MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         sym_layer {
             bindings = <
 &kp LEFT_COMMAND  &kp EXCL     &kp AT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE       &kp KP_DOT     &kp N7        &kp N8  &kp N9  &kp ASTERISK  &kp SLASH
@@ -76,9 +91,18 @@
         nav_layer {
             bindings = <
 &kp LMETA  &none       &kp UP      &none       &kp HOME      &kp END        &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp RMETA
-&kp LALT   &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_UP     &kp PAGE_DOWN  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp RCTRL
+&kp LALT   &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_UP     &kp PAGE_DOWN  &kp F6   &hmr RSHFT F7  &hmr RCTRL F8  &hmr RALT F9  &hmr RGUI F10  &kp RCTRL
 &kp LCTRL  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP   &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans
                                    &trans      &trans        &trans         &trans   &trans   &trans
+            >;
+        };
+
+        mac_nav_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans        &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &hmr RSHFT F7  &hmr RGUI F8  &hmr RALT F9  &hmr RCTRL F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans        &trans        &trans          &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -88,15 +112,6 @@
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &sys_reset   &none         &none         &none         &none         &none         &none         &tog MAC      &none         &none         &none         &sys_reset
                                          &trans        &none         &trans        &none         &trans        &trans
-            >;
-        };
-
-        mac_layer {
-            bindings = <
-&mt LCTRL RBKT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RCTRL
-&trans          &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &trans  &trans  &hmr RSHFT J  &hmr RGUI K  &hmr RALT L  &hmr RCTRL SEMI  &trans
-&mt LCMD MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
