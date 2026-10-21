@@ -57,7 +57,7 @@
         default_layer {
             bindings = <
 &mt LMETA RBKT      &kp Q  &kp W  &kp E        &kp R             &kp T          &kp Y           &kp U                 &kp I        &kp O    &kp P     &mt RIGHT_ALT RIGHT_ALT
-&mt LEFT_ALT GRAVE  &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G  &kp H  &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &mt RCTRL SQT
+&mt LEFT_ALT GRAVE  &kp A  &hml LGUI S  &hml LALT D  &hml LCTRL F  &kp G  &kp H  &hmr RCTRL J  &hmr RALT K  &hmr RGUI L  &kp SEMI  &mt RCTRL SQT
 &mt LCTRL MINUS     &kp Z  &kp X  &kp C        &kp V             &kp B          &kp N           &kp M                 &kp COMMA    &kp DOT  &kp FSLH  &sk LC(LS(LG(LEFT_ALT)))
                                   &lt NAV TAB  &mt LSHIFT SPACE  &lt SYM ENTER  &lt SYM ESCAPE  &mt RSHIFT BACKSPACE  &lt NAV DEL
             >;
@@ -75,7 +75,7 @@
         nav_layer {
             bindings = <
 &kp LMETA  &none       &kp UP      &none       &kp HOME      &kp END        &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp RMETA
-&kp LALT   &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_UP     &kp PAGE_DOWN  &kp F6   &hmr RSHFT F7  &hmr RCTRL F8  &hmr RALT F9  &hmr RGUI F10  &kp RCTRL
+&kp LALT   &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_UP     &kp PAGE_DOWN  &kp F6   &hmr RCTRL F7  &hmr RALT F8  &hmr RGUI F9  &kp F10  &kp RCTRL
 &kp LCTRL  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP   &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans
                                    &trans      &trans        &trans         &trans   &trans   &trans
             >;
