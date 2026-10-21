@@ -3,11 +3,9 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define DEF 0
-#define MAC 1
-#define SYM 2
-#define NAV 3
-#define MAC_NAV 4
-#define ADJ 5
+#define SYM 1
+#define NAV 2
+#define ADJ 3
 
 &lt { quick-tap-ms = <200>; };
 
@@ -51,11 +49,6 @@
             if-layers = <SYM NAV>;
             then-layer = <ADJ>;
         };
-
-        mac-nav-layer {
-            if-layers = <MAC NAV>;
-            then-layer = <MAC_NAV>;
-        };
     };
 
     keymap {
@@ -67,15 +60,6 @@
 &mt LEFT_ALT GRAVE  &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G  &kp H  &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &mt RCTRL SQT
 &mt LCTRL MINUS     &kp Z  &kp X  &kp C        &kp V             &kp B          &kp N           &kp M                 &kp COMMA    &kp DOT  &kp FSLH  &sk LC(LS(LG(LEFT_ALT)))
                                   &lt NAV TAB  &mt LSHIFT SPACE  &lt SYM ENTER  &lt SYM ESCAPE  &mt RSHIFT BACKSPACE  &lt NAV DEL
-            >;
-        };
-
-        mac_layer {
-            bindings = <
-&mt LCTRL RBKT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RCTRL
-&trans          &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &trans  &trans  &hmr RSHFT J  &hmr RGUI K  &hmr RALT L  &hmr RCTRL SEMI  &trans
-&mt LCMD MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -97,20 +81,11 @@
             >;
         };
 
-        mac_nav_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans        &trans        &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &hmr RSHFT F7  &hmr RGUI F8  &hmr RALT F9  &hmr RCTRL F10  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans        &trans        &trans          &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
         adjust_layer {
             bindings = <
 &bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&sys_reset   &none         &none         &none         &none         &none         &none         &tog MAC      &none         &none         &none         &sys_reset
+&sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
                                          &trans        &none         &trans        &none         &trans        &trans
             >;
         };
