@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: RIGHT ALT, h: RIGHT ALT}
+  - {t: '[', h: RIGHT ALT}
   - {t: '`', h: LEFT ALT}
   - A
   - {t: S, h: Gui}
